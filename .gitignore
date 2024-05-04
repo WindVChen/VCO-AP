@@ -1,0 +1,6 @@
+wandb/
+logs/
+.idea/
+pretrained/*.pth
+syn_dataset/
+LUTs/
