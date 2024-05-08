@@ -26,7 +26,7 @@
 
 ### Share us a :star: if this repo does help
 
-This repository is the official implementation of ***VCO-AP***, which tackles with the ***Digital-to-Physical Visual Inconsistency*** problem in current physical adversarial attacks. The PDF version of the paper can be accessed [[here](https://drive.google.com/file/d/1LPtAQIDBhbNvf_EWOV7SybiG9NYf9T1f/view?usp=drive_link)]. ***(Accepted by TGRS 2024)***
+This repository is the official implementation of ***VCO-AP***, which tackles with the ***Digital-to-Physical Visual Inconsistency*** problem in current physical adversarial attacks. The PDF version of the paper can be accessed [[here](https://drive.google.com/file/d/1LPtAQIDBhbNvf_EWOV7SybiG9NYf9T1f/view?usp=drive_link)] or [[IEEE](https://ieeexplore.ieee.org/document/10521633)]. ***(Accepted by TGRS 2024)***
 
 If you encounter any question, please feel free to contact us. You can create an issue or just send email to me windvchen@gmail.com. Also welcome for any idea exchange and discussion.
 
@@ -160,8 +160,16 @@ After you get the rendered images of the perturbed 3D scenarios, you can replace
 ## Citation & Acknowledgement
 If you find this paper useful in your research, please consider citing:
 ```
-@article{
-}
+@ARTICLE{10521633,
+  author={Chen, Jianqi and Zhang, Yilan and Liu, Chenyang and Chen, Keyan and Zou, Zhengxia and Shi, Zhenwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Digital-to-Physical Visual Consistency Optimization for Adversarial Patch Generation in Remote Sensing Scenes}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Physical adversarial attack;adversarial patch;object detection;remote sensing},
+  doi={10.1109/TGRS.2024.3397678}}
 ```
 Also thanks for the many great 3D model websites (e.g., Sketchfab and CGTrader). Some of our 3D elements are from them.
 
