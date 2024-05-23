@@ -76,7 +76,7 @@ In contrast to digital image adversarial attacks, adversarial patch attacks invo
 3. Datasets
    - For training the image harmonization network, we leverage the aerial detection dataset - **DOTA (v1.0)**. The training is in a self-supervised way. You can download DOTA from [[here](https://captain-whu.github.io/DOTA/dataset.html)].
    - As for 3D LUTs leveraged to train the image harmonization network, we cannot directly share them here due to the license. However, you can easily find numerous LUTs online, and leverage those for training. Here, we provide our pretrained weight of harmonization network below. 
-   - For physical scenarios to evaluate the attack performance, you should download our blend file from [[here](https://pan.baidu.com/s/1suZQxBfyunP_no8uYKmN_g) (code: af8n)]. More details please refer to [3D Simulated Dataset](#3D-Simulated-Dataset) below.
+   - For physical scenarios to evaluate the attack performance, you should download our blend file from [[Baidu Pan](https://pan.baidu.com/s/1suZQxBfyunP_no8uYKmN_g) (code: af8n) | [OneDrive](https://1drv.ms/u/s!AjJZqMEBTzDIjFOznVUw8PVQec9T?e=FY6CAY)]. More details please refer to [3D Simulated Dataset](#3D-Simulated-Dataset) below.
 
 4. Pre-trained Models
    - Our current code involves evaluation on four detectors: **ROITransformer, Rotated RetinaNet, Oriented R-CNN, and Oriented RepPoints**. You can find their configs in the [det_configs](det_configs) folder. For their pretrained weights, please download from [[here](https://github.com/open-mmlab/mmrotate/blob/main/docs/en/model_zoo.md)] and then place them into the directory `pretrained`.
