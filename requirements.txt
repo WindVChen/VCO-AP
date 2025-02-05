@@ -2,8 +2,8 @@ adamp==0.3.0
 art==6.1
 colour==0.1.5
 kornia==0.6.2
-mmcv==2.1.0
-mmdet==3.2.0
+mmcv==1.7.0
+mmdet==2.26.0
 mmrotate==0.3.4
 numpy==1.21.2
 opencv_python==4.5.4.58
