@@ -7,7 +7,7 @@ import torch
 import os
 import numpy as np
 import cv2
-from mmdet.apis.test import normalize
+from utils.misc import custom_normalize as normalize
 import art.preprocessing.expectation_over_transformation as EOT
 from utils import transforms_rbbox
 from utils.adversarial_attack_pos import addPert_corner, addPert_lateral, addPert_center

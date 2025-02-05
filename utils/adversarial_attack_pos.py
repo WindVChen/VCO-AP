@@ -1,6 +1,6 @@
 import kornia as K
 import torch
-from mmdet.apis.test import normalize
+from utils.misc import custom_normalize as normalize
 import numpy as np
 
 def addPert_center(pert, img, pos, downsize=5, adapative_transform=True):

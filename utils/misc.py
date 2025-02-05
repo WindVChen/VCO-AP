@@ -12,6 +12,21 @@ import torch.nn as nn
 _logger = None
 
 
+def custom_normalize(x, mode='normal', typ=False):
+    mean = torch.tensor(np.array([123.675, 116.28, 103.53]), dtype=x.dtype)[np.newaxis, :, np.newaxis,
+           np.newaxis]
+    var = torch.tensor(np.array([58.395, 57.12, 57.375]), dtype=x.dtype)[np.newaxis, :, np.newaxis, np.newaxis]
+    mean = mean.to(x.device)
+    var = var.to(x.device)
+    if typ:
+        mean = mean.half()
+        var = var.half()
+    if mode == 'normal':
+        return (x - mean) / var
+    elif mode == 'inv':
+        return x * var + mean
+
+
 def increment_path(path):
     # Increment path, i.e. runs/exp1 --> runs/exp{sep}1, runs/exp{sep}2 etc.
     res = re.search("\d+", path)
